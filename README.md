@@ -1,3 +1,3 @@
 # WeatherApp
 
-🔗 **Links_**https://yujeongaz.github.io/WeatherApp/
+🔗 **Links** https://yujeongaz.github.io/WeatherApp/
