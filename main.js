@@ -16,7 +16,11 @@ let weather = {
         document.getElementById('icon').src = `https://openweathermap.org/img/wn/${icon}.png`;
         document.getElementById('description').innerText = description;
         document.getElementById('humidity').innerText = `Humidity: ${humidity}%`;
-        document.getElementById('wind').innerText = `Wind speed: ${Math.floor(speed)}m/s`;
+        if (speed < 1) {
+            document.getElementById('wind').innerText = `Wind speed: ${speed.toFixed(1)}m/s`;
+        } else {
+            document.getElementById('wind').innerText = `Wind speed: ${Math.floor(speed)}m/s`;
+        }
     },
 };
 
